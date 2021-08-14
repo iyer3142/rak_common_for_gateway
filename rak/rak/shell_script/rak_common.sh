@@ -1,7 +1,7 @@
 #!/bin/bash
 
-RAK_GW_INFO_JSON_FILE=/usr/local/rak/rak_gw_model.json
-GATEWAY_CONFIG_INFO=/usr/local/rak/gateway-config-info.json
+RAK_GW_INFO_JSON_FILE=/usr/local/rak/rak_gw_model.json #--information of gateway model
+GATEWAY_CONFIG_INFO=/usr/local/rak/gateway-config-info.json #--configuration of gw
 
 function echo_normal()
 {
@@ -174,11 +174,11 @@ write_json_loraserver_adr()
     write_json_gateway_info "loraserver_adr" $1
 }
 
-write_json_chirpstack_install()
-{
+#write_json_chirpstack_install()
+#{
     # 数字 1/2
-    write_json_gateway_info "install_chirpstack" $1
-}
+#    write_json_gateway_info "install_chirpstack" $1
+#}
 
 do_get_lora_spi()
 {

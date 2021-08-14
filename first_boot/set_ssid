@@ -13,6 +13,6 @@ GATEWAY_EUI=${GATEWAY_EUI^^}
 
 sed -i "26c SSID=Rakwireless_$GATEWAY_EUI" /usr/local/rak/ap/create_ap.conf
 
-sed -i "s/^.*ap_ssid.*$/\"ap_ssid\":\"Rakwireless_$GATEWAY_EUI\",/" /usr/local/rak/gateway-config-info.json
-sed -i "s/^.*ap_pwd.*$/\"ap_pwd\":\"rakwireless\"/" /usr/local/rak/gateway-config-info.json
+sed -i "s/^.*ap_ssid.*$/\"ap_ssid\":\"CITiLIGHT_wireless_$GATEWAY_EUI\",/" /usr/local/rak/gateway-config-info.json
+sed -i "s/^.*ap_pwd.*$/\"ap_pwd\":\"citilight@123\"/" /usr/local/rak/gateway-config-info.json
 

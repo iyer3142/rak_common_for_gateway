@@ -29,7 +29,7 @@ ARGS=`getopt -o "" -l "help,img,chirpstack:" -- "$@"`
 
 eval set -- "${ARGS}"
 
-INSTALL_CHIRPSTACK=1
+INSTALL_CHIRPSTACK=0 #---changed this from 1 to 0
 
 CREATE_IMG=""
 
@@ -74,7 +74,7 @@ while true; do
     esac
 done
 
-# select gw model
+# select gw model ----------------------list of supported gateways are displayed, and accordingly installed
 ./choose_model.sh $CREATE_IMG
 
 apt update
@@ -91,17 +91,17 @@ pushd ap
 sleep 1
 popd
 
-if [ "$INSTALL_CHIRPSTACK" = 1 ]; then
+if [ "$INSTALL_CHIRPSTACK" = 1 ]; then  #-----disable this in gateway-config-info.json
     pushd chirpstack
     ./install.sh $CREATE_IMG
     sleep 1
     popd
 fi
 
-pushd lte
-./install.sh $CREATE_IMG
-sleep 1
-popd
+#pushd lte
+#./install.sh $CREATE_IMG
+#sleep 1
+#popd
 
 pushd lora
 ./install.sh $CREATE_IMG
@@ -118,6 +118,6 @@ pushd sysconf
 sleep 1
 popd
 
-echo_success "*********************************************************"
-echo_success "*  The RAKwireless gateway is successfully installed!   *"
-echo_success "*********************************************************"
+echo_success "****************************************************************"
+echo_success "*  The CITiLIGHT wireless gateway is successfully installed!   *"
+echo_success "****************************************************************"

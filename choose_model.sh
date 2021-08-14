@@ -8,6 +8,7 @@ if [ $UID != 0 ]; then
     exit 1
 fi
 
+#-------Common RAK file is first installed before installing gateway-specific files
 SCRIPT_COMMON_FILE=$(pwd)/rak/rak/shell_script/rak_common.sh
 source $SCRIPT_COMMON_FILE
 

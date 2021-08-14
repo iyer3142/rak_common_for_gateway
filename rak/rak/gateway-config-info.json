@@ -1,38 +1,33 @@
 {
-	"lora_server":
-	{
-		"server_plan":"2",
-		"lora_server_ip":"127.0.0.1",
-		"up_port":"1700",
-		"down_port":"1700",
-		"loraserver_adr":"2",
-		"freq":"5"
+	"lora_server": {
+		"server_plan": "2",
+		"lora_server_ip": "10.1.1.14",
+		"up_port": "1700",
+		"down_port": "1700",
+		"loraserver_adr": "2",
+		"freq": "5"
 	},
-	"wifi":
-	{
-		"wifi_mode":"1",
-		"wifi_ip":"",
-		"wifi_gw":"",
-		"ap_ssid":"rakwireless_xxxx",
-		"ap_pwd":"rakwireless"
+	"wifi": {
+		"wifi_mode": "1",
+		"wifi_ip": "",
+		"wifi_gw": "",
+		"ap_ssid": "CITiLIGHT_wireless_xxxx",
+		"ap_pwd": "citilight@123"
 	},
-	"lan":
-	{
-		"lan_ip":"192.168.10.10",
-		"lan_gw":"192.168.10.1"
+	"lan": {
+		"lan_ip": "192.168.10.10",
+		"lan_gw": "192.168.10.1"
 	},
-	"apn":
-	{
-		"apn_name":"HOLOGRAM",
-		"apn_baud":"115200"
+	"apn": {
+		"apn_name": "HOLOGRAM",
+		"apn_baud": "115200"
 	},
-	"time":
-	{
-		"sync_time":0
+	"time": {
+		"sync_time": 0
 	},
-	"active_lora_server":"2",
-	"install_img":"0",
-	"install_chirpstack":"1",
-	"install_lte":"0",
-	"lte_mode":"2"
+	"active_lora_server": "2",
+	"install_img": "0",
+	"install_chirpstack": "0",
+	"install_lte": "0",
+	"lte_mode": "2"
 }
