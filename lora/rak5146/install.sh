@@ -58,8 +58,8 @@ mv $INSTALL_DIR/packet_forwarder/lora_pkt_fwd_bak $INSTALL_DIR/packet_forwarder/
 
 if [ -d global_conf ]; then
 	cp global_conf $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/ -rf
-	cp global_conf/global_conf.eu_863_870.json $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/global_conf.json
-	sed -i "s/^.*server_address.*$/\t\"server_address\": \"127.0.0.1\",/" $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/global_conf.json
+	cp global_conf/global_conf.in_865_867.json $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/global_conf.json
+	sed -i "s/^.*server_address.*$/\t\"server_address\": \"10.1.1.14\",/" $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/global_conf.json
 fi
 
 cp reset_lgw.sh $INSTALL_DIR/packet_forwarder/lora_pkt_fwd/reset_lgw.sh

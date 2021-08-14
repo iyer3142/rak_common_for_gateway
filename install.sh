@@ -51,7 +51,7 @@ while true; do
             if [ "not_install" = "${1}" ]; then
                 INSTALL_CHIRPSTACK=0
             elif [ "install" = "${1}" ]; then
-                INSTALL_CHIRPSTACK=1
+                INSTALL_CHIRPSTACK=0
             else
                 echo "invalid value"
                 exit
